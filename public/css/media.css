@@ -1,0 +1,64 @@
+@media screen and (max-width: 1199.98px) {}
+
+@media screen and (max-width: 991.98px) {}
+
+@media screen and (max-width: 767.98px) {
+  .logo {
+    width: 122px;
+  }
+
+  .head {
+    height: 50px;
+    border-bottom: solid 1px #DA291C;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  h4 {
+    padding: 0;
+  }
+
+  .section3 .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .box1 {
+    background-color: #F7F6F6;
+    padding: 10px;
+  }
+
+  .content {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .box2 {
+    padding-left: 0;
+  }
+
+  .section3 {
+    height: auto;
+  }
+
+  .field__input::placeholder {
+    font-size: 14px;
+  }
+  .box1 p
+  {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+}
